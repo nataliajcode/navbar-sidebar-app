@@ -14,7 +14,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
   <FontAwesomeIcon icon={faReact} style={{ marginRight: '8px' }} />
-  MinApp
+  MyApp
 </div>
 
       <button className="hamburger" onClick={toggleMenu}>
