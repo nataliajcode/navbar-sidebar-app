@@ -90,30 +90,30 @@ body {
 @media (max-width: 768px) {
   /* Navbar */
   .navbar .hamburger {
-    display: block; /* Gör hamburgermenyn synlig på små skärmar */
+    display: block; 
   }
 
   .navbar .nav-links {
-    display: none; /* Dölj nav-links som standard */
+    display: none; 
     flex-direction: column;
     background-color: #444;
     padding: 1rem;
     position: absolute;
-    top: 3rem; /* Flytta ner menyn så att den inte överlappar navbaren */
+    top: 3rem; 
     right: 0;
     z-index: 1000;
-    width: 100%; /* Gör menyn fullbredd på små skärmar */
+    width: 100%; 
   }
 
   .navbar .nav-links.open {
-    display: flex; /* Visa menyn när den är öppen */
-    max-height: 300px; /* Sätt en maxhöjd för menyn när den är öppen */
-    max-width: 200px; /* Sätt en maxhöjd för menyn när den är öppen */
+    display: flex; 
+    max-height: 300px; 
+    max-width: 200px; 
   }
 
   /* Sidebar */
   .sidebar {
-    width: 100%; /* Gör sidebar fullbredd på små skärmar */
+    width: 100%; 
     text-align: center;
   }
 
@@ -125,16 +125,16 @@ body {
 
   /* Content */
   .content h1 {
-    margin-left: 0; /* Ta bort vänster marginal när skärmen är liten */
+    margin-left: 0; 
     font-size: 4rem; /* Minska fontstorleken på små skärmar */
-    text-align: center; /* Centrera texten */
+    text-align: center; 
   }
 
   .content h2 {
-    margin-left: 0; /* Ta bort vänster marginal */
-    text-align: center; /* Centrera texten */
-    font-size: 1.5rem; /* Minska fontstorleken på små skärmar */
-    margin-top: 1rem; /* Lägg till lite mellanrum */
+    margin-left: 0; 
+    text-align: center; 
+    font-size: 1.5rem; 
+    margin-top: 1rem; 
   }
 
   /* Flexbox för main-content */

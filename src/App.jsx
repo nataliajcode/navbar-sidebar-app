@@ -9,7 +9,7 @@ function App() {
       <div className="main-content">
         <Sidebar />
         <div className="content">
-          <h1>WELCOME.</h1> {/* Denna text påverkas av .content i CSS */}
+          <h1>WELCOME.</h1> 
           <h2>This is my React App.</h2>
         </div>
       </div>
