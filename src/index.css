@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar .hamburger {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+/* SIDEBAR + CONTENT */
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 150px;
+  background-color: #F1EFEC;
+  padding: 2rem;
+}
+
+.sidebar a {
+  display: block;
+  margin: 1rem 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.content h1 {
+  flex-grow: 1;
+  margin-left: 17rem;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 8rem;
+  letter-spacing: 0.1rem;
+}
+.content h2 {
+  color: rgb(134, 130, 130);
+  margin-left: 50rem;
+  font-weight: lighter;
+  margin-top: 7rem;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+
+/* RESPONSIVITET */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar .hamburger {
+    display: block; /* Gör hamburgermenyn synlig på små skärmar */
+  }
+
+  .navbar .nav-links {
+    display: none; /* Dölj nav-links som standard */
+    flex-direction: column;
+    background-color: #444;
+    padding: 1rem;
+    position: absolute;
+    top: 3rem; /* Flytta ner menyn så att den inte överlappar navbaren */
+    right: 0;
+    z-index: 1000;
+    width: 100%; /* Gör menyn fullbredd på små skärmar */
+  }
+
+  .navbar .nav-links.open {
+    display: flex; /* Visa menyn när den är öppen */
+    max-height: 300px; /* Sätt en maxhöjd för menyn när den är öppen */
+    max-width: 200px; /* Sätt en maxhöjd för menyn när den är öppen */
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 100%; /* Gör sidebar fullbredd på små skärmar */
+    text-align: center;
+  }
+
+  .sidebar a {
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  /* Content */
+  .content h1 {
+    margin-left: 0; /* Ta bort vänster marginal när skärmen är liten */
+    font-size: 4rem; /* Minska fontstorleken på små skärmar */
+    text-align: center; /* Centrera texten */
+  }
+
+  .content h2 {
+    margin-left: 0; /* Ta bort vänster marginal */
+    text-align: center; /* Centrera texten */
+    font-size: 1.5rem; /* Minska fontstorleken på små skärmar */
+    margin-top: 1rem; /* Lägg till lite mellanrum */
+  }
+
+  /* Flexbox för main-content */
+  .main-content {
+    flex-direction: column;
+    
+  }
+}
