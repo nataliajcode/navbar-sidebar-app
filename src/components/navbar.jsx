@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import reactLogo from '../assets/react.svg'; 
+
 
 
 function Navbar() {
@@ -13,9 +13,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-  <FontAwesomeIcon icon={faReact} style={{ marginRight: '8px' }} />
+  <img src={reactLogo} alt="React Logo" style={{ width: '30px', marginRight: '8px' }} />
   MyApp
 </div>
+
 
       <button className="hamburger" onClick={toggleMenu}>
         ☰
